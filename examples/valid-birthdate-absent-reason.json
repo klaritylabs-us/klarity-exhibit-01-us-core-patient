@@ -1,0 +1,25 @@
+{
+  "resourceType": "Patient",
+  "id": "syn-unknown-dob",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/mrn",
+      "value": "MRN-505"
+    }
+  ],
+  "name": [{ "family": "Absent", "given": ["BirthDate"] }],
+  "gender": "female",
+  "_birthDate": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  }
+}

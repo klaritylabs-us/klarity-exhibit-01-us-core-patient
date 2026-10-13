@@ -1,0 +1,52 @@
+{
+  "resourceType": "Patient",
+  "id": "syn-patient-001",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical Record Number"
+          }
+        ],
+        "text": "MRN"
+      },
+      "system": "http://hospital.example.org/mrn",
+      "value": "MRN-100200300"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Demo",
+      "given": ["Jane"]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-0100",
+      "use": "home"
+    }
+  ],
+  "gender": "unknown",
+  "birthDate": "1980-04-01",
+  "address": [
+    {
+      "use": "home",
+      "line": ["100 FHIR Way"],
+      "city": "Anytown",
+      "state": "MA",
+      "postalCode": "02101",
+      "country": "US"
+    }
+  ]
+}

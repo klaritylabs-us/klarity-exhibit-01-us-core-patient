@@ -1,0 +1,17 @@
+{
+  "resourceType": "Patient",
+  "id": "syn-missing-dob",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/mrn",
+      "value": "MRN-404"
+    }
+  ],
+  "name": [{ "family": "UnknownDob", "given": ["Case"] }],
+  "gender": "other"
+}

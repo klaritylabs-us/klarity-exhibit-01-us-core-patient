@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-01-us-core-patient"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "US Core Patient payload checks for FHIR R4"
+publish = false
+
+[lib]
+name = "us_core_patient"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-patient"
+path = "src/bin/validate_patient.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

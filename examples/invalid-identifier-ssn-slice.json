@@ -1,0 +1,39 @@
+{
+  "resourceType": "Patient",
+  "id": "syn-bad-ssn-system",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS",
+            "display": "Social Security Number"
+          }
+        ],
+        "text": "SSN"
+      },
+      "system": "urn:oid:2.16.840.1.113883.4.1",
+      "value": "000-00-0000"
+    }
+  ],
+  "name": [{ "family": "Slice", "given": ["Error"] }],
+  "telecom": [{ "system": "phone", "value": "555-0199", "use": "home" }],
+  "gender": "male",
+  "birthDate": "1975-06-15",
+  "address": [
+    {
+      "use": "home",
+      "line": ["1 Slice Demo Rd"],
+      "city": "Anytown",
+      "state": "MA",
+      "postalCode": "02101",
+      "country": "US"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "resourceType": "Patient",
+  "id": "syn-no-profile",
+  "identifier": [
+    {
+      "system": "http://hospital.example.org/mrn",
+      "value": "MRN-999"
+    }
+  ],
+  "name": [{ "family": "NoProfile", "given": ["Test"] }],
+  "gender": "female",
+  "birthDate": "1990-01-01"
+}
